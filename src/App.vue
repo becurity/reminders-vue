@@ -2,10 +2,10 @@
   <div id="app" class="single-page-app single-page-app-left-nav be-row">
     <div class="left-nav be-col-20">
       <div class="item">
-        <router-link to="/">Home</router-link>
-      </div>
-      <div class="item">
         <router-link to="/about">About</router-link>
+      </div>
+      <div class="item" v-for="checklist of checklists" v-bind:onclick="setCurrentChecklist(checklist)">
+        <router-link to="/">{{checklist.title}}</router-link>
       </div>
     </div>
     <div class="view-container be-col">
@@ -13,6 +13,20 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+  import { Component, Vue } from 'vue-property-decorator';
+  import {Checklist} from "@/models/Checklist";
+
+  @Component
+  export default class AppComponent extends Vue {
+    get checklists() {
+      return this.$store.getters.checklists;
+    }
+    setCurrentChecklist(checklist: Checklist) {
+      this.$store.dispatch('setCurrentChecklist', checklist);
+    }
+  }
+</script>
 
 <style>
   html, body {

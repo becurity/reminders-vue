@@ -1,4 +1,4 @@
-import {Reminder} from '@/models/reminder';
+import {Reminder} from '@/models/Reminder';
 
 export interface Checklist {
     id: number;

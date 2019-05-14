@@ -14,7 +14,7 @@
 <script lang="ts">
   import Vue from "vue";
   import Component from "vue-class-component";
-  import {Reminder} from "@/models/reminder";
+  import {Reminder} from "@/models/Reminder";
   import { Prop } from 'vue-property-decorator';
 
   @Component

@@ -10,9 +10,9 @@
 <script lang="ts">
   import Vue from "vue";
   import Component from "vue-class-component";
-  import {Checklist} from "@/models/checklist";
-  import {Frequencies} from "@/models/reminder";
-  import {Priorities} from "@/models/reminder";
+  import {Checklist} from "@/models/Checklist";
+  import {Frequencies} from "@/models/Reminder";
+  import {Priorities} from "@/models/Reminder";
   import ReminderComponent from '@/components/Reminder.vue';
   import {Prop} from 'vue-property-decorator';
 
