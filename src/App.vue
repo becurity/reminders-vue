@@ -1,5 +1,9 @@
 <template>
   <div id="app" class="single-page-app single-page-app-left-nav be-row">
+    <div class="float-button-container" v-on:click="addChecklist">
+      <i class="fas fa-plus-circle"></i>
+      <span style="margin-left: 10px; cursor: pointer">Add List</span>
+    </div>
     <div class="left-nav be-col-20">
       <div class="item">
         <router-link to="/about">About</router-link>
@@ -22,8 +26,8 @@
     get checklists() {
       return this.$store.getters.checklists;
     }
-    setCurrentChecklist(checklist: Checklist) {
-      this.$store.dispatch('setCurrentChecklist', checklist);
+    addChecklist() {
+      this.$store.dispatch('addChecklist');
     }
   }
 </script>
@@ -34,6 +38,10 @@
     padding: 0;
     margin: 0;
     background-color: #1D1E20;
+  }
+  button {
+    background: transparent;
+    border: 0;
   }
   .be-row {
     display: flex;
@@ -60,6 +68,12 @@
   }
   .gray {
     color: gray;
+  }
+  .float-button-container {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
   }
   .sticky {
     position: fixed;

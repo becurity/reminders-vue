@@ -892,7 +892,17 @@ const state: AppState = {
 const mutations = {
     setCurrentChecklistId: (state: AppState, checklistId: number) => {
         state.currentChecklistId = checklistId;
-    }
+    },
+    addChecklist: (state: AppState) => {
+        state.checklists.push(
+            {
+                id: -1,
+                title: 'New List',
+                color: '#20d51a',
+                reminders: [],
+            },
+        );
+    },
 }
 
 // getters
@@ -903,21 +913,25 @@ const getters = {
     currentChecklist: (state: AppState) => {
         return state.checklists.find(el => el.id === state.currentChecklistId);
     },
-}
+};
 
 // actions
 const actions = {
     setCurrentChecklistId ({ commit, state }: any, checklistId: number) {
         commit('setCurrentChecklistId', checklistId);
     },
-}
+    addChecklist ({ commit, state }: any) {
+        commit('addChecklist');
+        //TODO add change route to highlight new checklist
+    },
+};
 
 const vue_store = {
     namespaced: true,
     state,
     getters,
     actions,
-    mutations
+    mutations,
 };
 
 export default new Vuex.Store(
