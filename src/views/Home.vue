@@ -15,7 +15,14 @@ import ChecklistComponent from '@/components/Checklist.vue';
 })
 export default class Home extends Vue {
   get checklist() {
+    this.$store.dispatch('setCurrentChecklistId', this.$route.params.checklistId);
     return this.$store.getters.currentChecklist ? this.$store.getters.currentChecklist : this.$store.state.checklists[0];
+  }
+  created() {
+    console.log('create');
+  }
+  updated() {
+    console.log('update');
   }
 }
 </script>

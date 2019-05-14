@@ -6,7 +6,7 @@
     </div>
     <div class="be-col underline-div">
       <input v-model="reminder.title" v-if="!reminder.isDone"/>
-      <input v-model="reminder.title" v-if="reminder.isDone"/>
+      <input v-model="reminder.title" disabled v-if="reminder.isDone"/>
     </div>
   </div>
 </template>

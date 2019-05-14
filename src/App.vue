@@ -4,8 +4,8 @@
       <div class="item">
         <router-link to="/about">About</router-link>
       </div>
-      <div class="item" v-for="checklist of checklists" v-bind:onclick="setCurrentChecklist(checklist)">
-        <router-link to="/">{{checklist.title}}</router-link>
+      <div class="item" v-for="checklist of checklists">
+        <router-link :to="{ name: 'home', params: { checklistId: checklist.id } }">{{checklist.title}}</router-link>
       </div>
     </div>
     <div class="view-container be-col">
@@ -92,7 +92,7 @@
   }
 
   #app h1 {
-    color: #d58123;
+    color: #d5720e;
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 15px;

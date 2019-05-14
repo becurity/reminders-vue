@@ -9,9 +9,13 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/rm/:checklistId',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '',
+      redirect: '/rm/1',
     },
     {
       path: '/about',

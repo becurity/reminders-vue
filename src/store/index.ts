@@ -882,14 +882,14 @@ const state: AppState = {
             ]
         },
     ],
-    currentChecklist: null,
+    currentChecklistId: null,
 };
 
 
 // mutations
 const mutations = {
-    setCurrentChecklist: (state: AppState, checklist: Checklist) => {
-        state.currentChecklist = checklist;
+    setCurrentChecklistId: (state: AppState, checklistId: number) => {
+        state.currentChecklistId = checklistId;
     }
 }
 
@@ -899,14 +899,14 @@ const getters = {
         return state.checklists;
     },
     currentChecklist: (state: AppState) => {
-        return state.currentChecklist;
+        return state.checklists.find(el => el.id === state.currentChecklistId);
     },
 }
 
 // actions
 const actions = {
-    setCurrentChecklist ({ commit, state }: any, checklist: Checklist) {
-        commit('setCurrentChecklist', checklist);
+    setCurrentChecklistId ({ commit, state }: any, checklistId: number) {
+        commit('setCurrentChecklistId', checklistId);
     },
 }
 
