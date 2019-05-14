@@ -1,6 +1,6 @@
 <template>
   <div class="checklist">
-    <h1 class="underline-div sticky">{{ checklist.title }}</h1>
+    <h1 class="underline-div sticky" v-bind:style="{color: checklist.color}">{{checklist.title }}</h1>
     <div class="reminders">
       <ReminderComponent v-for="reminder of checklist.reminders" v-bind:reminder="reminder" />
     </div>

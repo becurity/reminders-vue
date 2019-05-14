@@ -14,6 +14,7 @@ const state: AppState = {
         {
             id: 1,
             title: 'Reminders',
+            color: '#d5720e',
             reminders: [
                 {
                     id: 1,
@@ -449,6 +450,7 @@ const state: AppState = {
         {
             id: 2,
             title: 'Groceries',
+            color: '#0099CC',
             reminders: [
                 {
                     id: 1,
