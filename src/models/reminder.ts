@@ -13,11 +13,11 @@ export enum Frequencies {
     DAY = 'DAY',
     WEEK = 'WEEK',
     MONTH = 'MONTH',
-    YEAR = 'YEAR'
+    YEAR = 'YEAR',
 }
 export enum Priorities {
     LOW = 'LOW',
     MEDIUM = 'MEDIUM',
-    HIGH = 'HIGH'
+    HIGH = 'HIGH',
 }
 

@@ -1,10 +1,15 @@
 <template>
   <div class="todo-list">
-    <h1>{{ checklist.title }}</h1>
+    <h1 class="underline-div sticky">{{ checklist.title }}</h1>
     <div class="reminders">
-      <ul>
-        <li v-for="reminder of checklist.reminders">{{reminder.title}}</li>
-      </ul>
+      <div class="reminder be-row" v-for="reminder of checklist.reminders">
+        <div class="be-col-20px">
+          <i class="far fa-circle gray"></i>
+        </div>
+        <div class="be-col underline-div">
+          <input v-model="reminder.title">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -55,14 +60,420 @@
           isDone: false,
           userEmail: 'c@b.com'
         },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
+        {
+          id: -1,
+          title: '',
+          dateTimeUTC: 1557768793911,
+          frequency: Frequencies.DAY,
+          frequencyEndDateTimeUTC: 1557768793911,
+          priority: Priorities.MEDIUM,
+          note: 'Describe the reminder',
+          isDone: false,
+          userEmail: 'c@b.com'
+        },
       ]
     };
-
   }
 </script>
 
 <style scoped>
-  ul {
-    list-style: none;
+  input {
+    width: calc(100% - 10px);
+    background: transparent;
+    color: #fff;
+    border: 0;
+    height: 100%;
+  }
+  input:focus {
+    outline: none;
+  }
+  .todo-list {
+    padding-top: 65px;
+    height: calc(100% - 65%);
   }
 </style>
